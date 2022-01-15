@@ -1,0 +1,60 @@
+body {
+    font-family: "JetBrains Mono", "Fira Code", "Cascadia Mono", Consolas, monospace;
+}
+
+.navbar-container, .content-container, .footer-container {
+    width: 1200px;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.navbar-header {
+    display: block;
+    float: left;
+}
+
+.navbar-container > * {
+    padding: 10px 0;
+}
+
+.navbar-header-img {
+    width: 30%;
+}
+
+.navbar-nav {
+    display: block;
+    float: right;
+    list-style: none;
+    margin: 0;
+}
+
+.navbar-item {
+    float: left;
+    padding: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar-item-selected {
+    color: darkblue;
+}
+
+.navbar-item-not-selected {
+    color: deepskyblue;
+}
+
+.content {
+    display: block;
+}
+
+.footer {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
