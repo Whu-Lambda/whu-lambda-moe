@@ -19,5 +19,5 @@ jobs:
       - name: Publish
         uses: crazy-max/ghaction-github-pages@v2.5.0
         with:
-          build_dir: .
-          target_branch: vanilla
+          build_dir: ./
+          target_branch: vanilla-publish
