@@ -37,3 +37,4 @@ jobs:
         with:
           build_dir: .
           target_branch: vanilla-publish
+          jekyll: false
