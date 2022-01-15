@@ -19,5 +19,6 @@
     "prettier-plugin-svelte": "^2.4.0",
     "svelte": "^3.44.0"
   },
+  "private": true,
   "type": "module"
 }
