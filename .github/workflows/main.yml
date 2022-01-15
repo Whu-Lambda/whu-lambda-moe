@@ -16,8 +16,24 @@ jobs:
         uses: actions/checkout@v2
         with:
           ref: vanilla
+      - name: Build
+        run: echo "skipped"
+      - name: Upload artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: "Content"
+          path: ./
+  publish:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: "Content"
+          path: .
       - name: Publish
         uses: crazy-max/ghaction-github-pages@v2.5.0
         with:
-          build_dir: ./
+          build_dir: .
           target_branch: vanilla-publish
