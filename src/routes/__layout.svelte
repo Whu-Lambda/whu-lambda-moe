@@ -3,7 +3,7 @@
     <a href="/" class="me-auto">
       <img
         class="logo"
-        src="https://media.githubusercontent.com/media/Whu-Lambda/whu-lambda.github.io/Nextjs/public/imgs/logo.png"
+        src="https://media.githubusercontent.com/media/Whu-Lambda/whu-lambda-moe/Nextjs/public/imgs/logo.png"
         alt="logo"
       />
     </a>
