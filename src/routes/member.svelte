@@ -23,10 +23,10 @@
 </div>
 
 <div class="d-flex justify-content-center align-items-center">
-  <a class="mx-3" href="/https://zhihu.com"> <i class="fab fa-zhihu icon" /></a>
-  <a class="mx-3" href="/https://weixin.com"> <i class="fab fa-weixin icon" style="color: green;" /></a>
-  <a class="mx-3" href="/https://weibo.com"> <i class="fab fa-weibo icon" style="color:#e6162d" /></a>
-  <a class="mx-3" href="/https://bilibili.com">
+  <a class="mx-3" href="https://zhihu.com"> <i class="fab fa-zhihu icon" /></a>
+  <a class="mx-3" href="https://weixin.com"> <i class="fab fa-weixin icon" style="color: green;" /></a>
+  <a class="mx-3" href="https://weibo.com"> <i class="fab fa-weibo icon" style="color:#e6162d" /></a>
+  <a class="mx-3" href="https://bilibili.com">
     <svg width="3rem" style="color:#08a3d7;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
       <path
         fill="currentColor"

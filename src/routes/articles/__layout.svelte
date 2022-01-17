@@ -6,7 +6,7 @@
     <h4>Subscribe</h4>
     <div class="hline" />
     <p />
-    <p class="rss-subscribe"><i class="fa fa-rss" /> Subscribe to this blog <a href="/feed.xml">via RSS</a>.</p>
+    <p class="rss-subscribe"><i class="fa fa-rss" /> Subscribe to this blog <a href="/">via RSS</a>.</p>
     <p />
     <div class="spacing" />
     <h4>Categories</h4>
