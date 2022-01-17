@@ -37,6 +37,7 @@ bower_components
 
 # Compiled binary addons (https://nodejs.org/api/addons.html)
 build/Release
+build/
 
 # Dependency directories
 node_modules/
@@ -50,6 +51,9 @@ web_modules/
 
 # Optional npm cache directory
 .npm
+
+# for autobuild command
+autobuild.sh
 
 # Optional eslint cache
 .eslintcache
