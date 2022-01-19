@@ -26,3 +26,7 @@ Whu Lambda welcomes you to join us!
 ## Documents
 
 See `docs` folder for more details.
+
+## Roadmap
+
+See `docs/roadmap` for more details.
