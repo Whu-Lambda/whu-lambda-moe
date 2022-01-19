@@ -1,0 +1,6 @@
+[submodule "frontend"]
+	path = whu-lambda-moe-frontend
+	url = git@github.com:Whu-Lambda/whu-lambda-moe-frontend.git
+[submodule "backend"]
+	path = whu-lambda-moe-backend
+	url = git@github.com:Whu-Lambda/whu-lambda-moe-backend.git
