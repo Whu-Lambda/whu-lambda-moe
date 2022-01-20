@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package dto;
+
+import "google/protobuf/timestamp.proto";
+
+message Activity{
+    enum Status{
+        CREATED = 0;
+        RUNNING = 1;
+        CANCELED = 2;
+        FINISHED = 3;
+    }
+
+    string name = 1;
+    google.protobuf.Timestamp time = 2;
+    string place = 3;
+    Status status = 4;
+    string content = 5;
+}
+
+service ActivityService{
+    rpc GetActivity(uint32) returns (Activity);
+}

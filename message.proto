@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package dto;
+
+import "google/protobuf/timestamp.proto";
+
+message Article{
+    string name = 1;
+    string author = 2;
+    google.protobuf.Timestamp created_at = 3;
+    string cover_url = 4;
+    string content = 5;
+}
+
+service ArticleService{
+    rpc GetArticle(uint32) returns (Article);
+}
