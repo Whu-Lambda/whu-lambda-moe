@@ -3,6 +3,7 @@ syntax = "proto3";
 package whu.lambda.dto;
 
 import "google/protobuf/timestamp.proto";
+import "google/protobuf/wrappers.proto";
 
 message Article{
     string name = 1;
@@ -13,5 +14,5 @@ message Article{
 }
 
 service ArticleService{
-    rpc GetArticle(uint32) returns (Article);
+    rpc GetArticle(google.protobuf.Int32Value) returns (Article);
 }
