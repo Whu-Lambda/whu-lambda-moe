@@ -12,6 +12,11 @@ message Activity{
     string status = 4;
     string content = 5;
     bool is_valid = 6;
+    string summary = 7;
+    string author = 8;
+    string cover_url = 9;
+    string tags = 10;
+    google.protobuf.Timestamp created_at = 11;
 }
 
 message Article{
@@ -21,6 +26,8 @@ message Article{
     string cover_url = 4;
     string content = 5;
     bool is_valid = 6;
+    string about = 7;
+    string tags = 8;
 }
 
 service Anonymous{
