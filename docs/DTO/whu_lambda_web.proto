@@ -4,6 +4,7 @@ package whu.lambda.web;
 
 import "google/protobuf/timestamp.proto";
 import "google/protobuf/wrappers.proto";
+import "google/protobuf/empty.proto";
 
 message Activity{
     string name = 1;
@@ -30,7 +31,30 @@ message Article{
     string tags = 8;
 }
 
+message LoginInfo{
+    string username = 1;
+    string password = 2;
+}
+
+message Account{
+    string username = 1;
+    string password = 2;
+    string avatar = 3;
+    string bio = 4;
+    string email = 5;
+    string phone = 6;
+    bool is_valid = 7;
+}
+
 service Anonymous{
-    rpc GetActivity(google.protobuf.Int32Value) returns (Activity);
-    rpc GetArticle(google.protobuf.Int32Value) returns (Article);
+    rpc GetActivity(google.protobuf.Int32Value) returns(Activity);
+    rpc GetArticle(google.protobuf.Int32Value) returns(Article);
+    rpc Login(LoginInfo) returns(google.protobuf.BoolValue);
+    rpc Signup(Account) returns(google.protobuf.BoolValue);
+}
+
+service Authenticated{
+    rpc PostActivity(Activity) returns(google.protobuf.BoolValue);
+    rpc PostArticle(Article) returns(google.protobuf.BoolValue);
+    rpc Logout(google.protobuf.Empty) returns(google.protobuf.Empty);
 }
