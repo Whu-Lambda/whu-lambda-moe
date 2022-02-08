@@ -33,10 +33,12 @@ message Article{
     int32 id = 9;
 }
 
+/*
 message LoginInfo{
     string username = 1;
     string password = 2;
 }
+
 
 message Account{
     string username = 1;
@@ -47,18 +49,17 @@ message Account{
     string phone = 6;
     bool is_valid = 7;
 }
+*/
 
 service Anonymous{
     rpc GetActivity(google.protobuf.Int32Value) returns(Activity);
     rpc GetActivities(google.protobuf.Empty) returns(stream Activity);
     rpc GetArticle(google.protobuf.Int32Value) returns(Article);
     rpc GetArticles(google.protobuf.Empty) returns(stream Article);
-    rpc Login(LoginInfo) returns(google.protobuf.BoolValue);
-    rpc Signup(Account) returns(google.protobuf.BoolValue);
 }
 
 service Authenticated{
-    rpc PostActivity(Activity) returns(google.protobuf.BoolValue);
-    rpc PostArticle(Article) returns(google.protobuf.BoolValue);
-    rpc Logout(google.protobuf.Empty) returns(google.protobuf.Empty);
+    // Returns ID, or -1 on failure.
+    rpc PostActivity(Activity) returns(google.protobuf.Int32Value);
+    rpc PostArticle(Article) returns(google.protobuf.Int32Value);
 }
