@@ -52,6 +52,7 @@ message Account{
 */
 
 service Anonymous{
+    rpc HealthCheck(google.protobuf.Empty) returns(google.protobuf.Empty);
     rpc GetActivity(google.protobuf.Int32Value) returns(Activity);
     rpc GetActivities(google.protobuf.Empty) returns(stream Activity);
     rpc GetArticle(google.protobuf.Int32Value) returns(Article);
@@ -59,6 +60,7 @@ service Anonymous{
 }
 
 service Authenticated{
+    rpc HealthCheck(google.protobuf.Empty) returns(google.protobuf.Empty);
     // Returns ID, or -1 on failure.
     rpc PostActivity(Activity) returns(google.protobuf.Int32Value);
     rpc PostArticle(Article) returns(google.protobuf.Int32Value);
